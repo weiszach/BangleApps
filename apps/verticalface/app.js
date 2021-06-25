@@ -10,6 +10,10 @@ function drawTimeDate() {
   if (h < 10) {
     h = "0" + h;
   }
+  else if(h > 12)
+  {
+     h = h - 12; 
+  }
   
   if (m < 10) {
     m = "0" + h;
@@ -23,7 +27,7 @@ function drawTimeDate() {
   // Reset the state of the graphics library
   g.reset();
   // Set color
-  g.setColor('#2ecc71');
+  g.setColor('#333FFF');
   // draw the current time (4x size 7 segment)
   g.setFont("8x12",8);
   g.setFontAlign(-1,0); // align right bottom
@@ -158,7 +162,7 @@ setWatch(function(){
 }, BTN1, { repeat: true, edge: "falling" });
 
 Bangle.on('HRM', function(hrm) {
-  if(hrm.confidence > 90){
+  if(hrm.confidence > 95){
     /*Do more research to determine effect algorithm for heartrate average.*/
     //console.log(hrm.bpm);
     currentHRM = hrm.bpm;
