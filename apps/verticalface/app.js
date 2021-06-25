@@ -22,7 +22,7 @@ function drawTimeDate() {
   var daysOfWeek = ["SUN", "MON", "TUE","WED","THU","FRI","SAT"];
   var hours = (" "+h).substr(-2);
   var mins= ("0"+m).substr(-2);
-  var date = `${daysOfWeek[weekDay]}|${day}|${("0"+(month+1)).substr(-2)}`;
+  var date = `${daysOfWeek[weekDay]}|${("0"+(month+1)).substr(-2)}|${day}`;
 
   // Reset the state of the graphics library
   g.reset();
