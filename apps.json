@@ -2182,6 +2182,21 @@
       {"name":"verticalface.img","url":"app-icon.js","evaluate":true}
     ]
   },
+  {
+    "id": "verticleface2",
+    "name": "Vertical watch face 2",
+    "shortName":"Vertical Face 2",
+    "icon": "app.png",
+    "version":"0.08",
+    "description": "A simple vertical watch face with the date. Heart rate monitor is toggled with BTN1",
+    "tags": "clock",
+    "type":"clock",
+    "allow_emulator":true,
+    "storage": [
+      {"name":"verticleface2.app.js","url":"app.js"},
+      {"name":"verticleface2.img","url":"app-icon.js","evaluate":true}
+    ]
+  },
   { "id": "sleepphasealarm",
     "name": "SleepPhaseAlarm",
     "shortName":"SleepPhaseAlarm",
