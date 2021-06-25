@@ -13,6 +13,9 @@ function drawTimeDate() {
   else if(h > 12)
   {
      h = h - 12; 
+     if (h < 10) {
+      h = "0" + h;
+    }
   }
   
   if (m < 10) {
